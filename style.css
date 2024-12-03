@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: none;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.6rem 3.12rem;
+  box-shadow: 0 0.21rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.item-lista-cabecalho {
+  color: #112e61;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  list-style: none;
+
+  &:hover,
+  :active {
+    color: #f60;
+  }
+}
+
+.item-lista-cabecalho.contem-filhos::after {
+  content: "\25bc";
+}
+
+/* ------ */
