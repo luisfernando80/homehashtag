@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,10 @@ ul {
 
 nav {
   display: none;
+}
+
+.secao {
+  padding: 9.54rem 2rem;
 }
 
 /* CABEÇALHO */
@@ -51,4 +57,19 @@ nav {
   content: "\25bc";
 }
 
-/* ------ */
+/* SECAO HERO */
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.hero-paragrafo {
+  font-size: 1.9rem;
+}
+
+.botao {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
