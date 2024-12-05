@@ -21,55 +21,129 @@ ul {
   list-style: none;
 }
 
-nav {
-  display: none;
+.secao {
+  padding: 7.6rem 2rem;
 }
 
-.secao {
-  padding: 9.54rem 2rem;
+.container {
+  max-width: 100rem;
+  margin: auto;
+}
+
+.botao {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding: 0.5rem 5rem;
+  color: white;
+  box-shadow: 0.4rem 0.4rem 0.6rem 0.1rem rgba(0, 0, 0, 0.164);
 }
 
 /* CABEÇALHO */
 
 .cabecalho {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   left: 0;
   background-color: white;
   padding: 1.6rem 3.12rem;
   box-shadow: 0 0.21rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
-}
 
-.item-lista-cabecalho {
-  color: #112e61;
-  font-size: 1.4rem;
-  text-decoration: none;
-  font-weight: 600;
-  list-style: none;
+  & .menu-cabecalho {
+    display: flex;
+    gap: 2.4rem;
 
-  &:hover,
-  :active {
-    color: #f60;
+    & .item-lista-cabecalho {
+      color: #112e61;
+      font-size: 1.4rem;
+      text-decoration: none;
+      font-weight: 600;
+      list-style: none;
+
+      &:hover,
+      :active {
+        color: #f60;
+      }
+    }
+
+    & .item-lista-cabecalho.contem-filhos {
+      position: relative;
+    }
+
+    & .menu-cabecalho-filho {
+      position: absolute;
+      right: 37.9rem;
+      box-shadow: 0.4rem 0.4rem 0.6rem 0.2rem rgba(0, 0, 0, 0.188);
+      display: flex;
+      gap: 0;
+      flex-flow: column;
+      align-items: flex-start;
+      background-color: white;
+      padding: 0.41rem 0;
+      border-radius: 1rem;
+      width: max-content;
+      align-items: stretch;
+
+      & li {
+        padding: 0.41rem 2rem;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.097);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    & .item-lista-cabecalho.contem-filhos::after {
+      content: "\25bc";
+    }
   }
-}
-
-.item-lista-cabecalho.contem-filhos::after {
-  content: "\25bc";
 }
 
 /* SECAO HERO */
 
-h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-}
+.hero-secao {
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.hero-paragrafo {
-  font-size: 1.9rem;
-}
+  & .container {
+    & h1 {
+      font-size: 3.32rem;
+      line-height: 1;
+      font-weight: 600;
+    }
 
-.botao {
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-decoration: none;
+    & .hero-paragrafo {
+      font-size: 1.9rem;
+      line-height: 1.3;
+    }
+
+    & .hero-botao {
+      background-image: linear-gradient(180deg, #ff645e, #ff9253);
+      border-bottom: 0.4rem solid #993c38;
+      border-right: 0.4rem solid #993c38;
+
+      &:hover {
+        background-image: none;
+        background-color: white;
+        border-bottom: 0.4rem solid white;
+        border-right: 0.4rem solid white;
+        color: #993c38;
+      }
+    }
+
+    & .iframe-video {
+      aspect-ratio: 16/9;
+      width: 42rem;
+      border-radius: 2.5rem;
+    }
+  }
 }
