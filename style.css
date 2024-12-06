@@ -39,6 +39,7 @@ ul {
   padding: 0.5rem 5rem;
   color: white;
   box-shadow: 0.4rem 0.4rem 0.6rem 0.1rem rgba(0, 0, 0, 0.164);
+  text-align: center;
 }
 
 /* CABEÇALHO */
@@ -72,16 +73,20 @@ ul {
       }
     }
 
-    & .item-lista-cabecalho.contem-filhos {
+    & .contem-filhos {
       position: relative;
+
+      &:hover .menu-cabecalho-filho {
+        display: flex;
+      }
     }
 
     & .menu-cabecalho-filho {
-      position: absolute;
-      right: 37.9rem;
-      box-shadow: 0.4rem 0.4rem 0.6rem 0.2rem rgba(0, 0, 0, 0.188);
-      display: flex;
+      display: none;
       gap: 0;
+      position: absolute;
+      right: 0;
+      box-shadow: 0.4rem 0.4rem 0.6rem 0.2rem rgba(0, 0, 0, 0.188);
       flex-flow: column;
       align-items: flex-start;
       background-color: white;
@@ -100,7 +105,8 @@ ul {
       }
     }
 
-    & .item-lista-cabecalho.contem-filhos::after {
+    & .contem-filhos::after {
+      color: #112e61;
       content: "\25bc";
     }
   }
@@ -114,36 +120,53 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 
-  & .container {
-    & h1 {
-      font-size: 3.32rem;
-      line-height: 1;
-      font-weight: 600;
-    }
+  & .container.hero {
+    display: flex;
+    gap: 3.12rem;
+    align-items: center;
 
-    & .hero-paragrafo {
-      font-size: 1.9rem;
-      line-height: 1.3;
-    }
+    & .primeira-coluna-hero {
+      display: flex;
+      flex-flow: column;
+      gap: 2rem;
+      flex: 6;
 
-    & .hero-botao {
-      background-image: linear-gradient(180deg, #ff645e, #ff9253);
-      border-bottom: 0.4rem solid #993c38;
-      border-right: 0.4rem solid #993c38;
+      & h1 {
+        font-size: 3.32rem;
+        line-height: 1;
+        font-weight: 600;
+      }
 
-      &:hover {
-        background-image: none;
-        background-color: white;
-        border-bottom: 0.4rem solid white;
-        border-right: 0.4rem solid white;
-        color: #993c38;
+      & .hero-paragrafo {
+        font-size: 1.9rem;
+        line-height: 1.3;
+      }
+
+      & .botoes-hero {
+        display: flex;
+        flex-flow: column;
+        gap: 1.6rem;
+
+        & .hero-botao {
+          background-image: linear-gradient(180deg, #ff645e, #ff9253);
+          border-bottom: 0.4rem solid #993c38;
+          border-right: 0.4rem solid #993c38;
+
+          &:hover {
+            background-image: none;
+            background-color: white;
+            border-bottom: 0.4rem solid white;
+            border-right: 0.4rem solid white;
+            color: #993c38;
+          }
+        }
       }
     }
-
     & .iframe-video {
       aspect-ratio: 16/9;
-      width: 42rem;
+      /* width: 42rem; */
       border-radius: 2.5rem;
+      flex: 5;
     }
   }
 }
