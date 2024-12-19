@@ -1,0 +1,24 @@
+@media all and (max-width: 47.93em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  /* SECAO HERO */
+
+  .hero-secao {
+    background-image: url(/imagens/BACKGROUN-banner-01-mobile.png);
+    & .container.hero {
+      flex-flow: column;
+      & .primeira-coluna-hero {
+        align-items: center;
+        text-align: center;
+        padding: 0.6rem 3.2rem;
+
+        & .botoes-hero {
+          flex-flow: row wrap;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
