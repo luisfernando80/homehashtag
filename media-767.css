@@ -3,6 +3,68 @@
     font-size: 43.75%;
   }
 
+  /* CABECALHO */
+
+  .cabecalho {
+    position: relative;
+    & img {
+      width: 10rem;
+    }
+
+    &.aberto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.961);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      & img {
+        display: none;
+      }
+
+      & .menu-cabecalho {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+      }
+
+      & .nav-icones {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+        & .icone-menu {
+          display: none;
+        }
+
+        & .icone-close {
+          display: block;
+        }
+      }
+    }
+
+    & .menu-cabecalho {
+      display: none;
+    }
+
+    & .nav-icones {
+      display: block;
+      color: var(--azul-escuro);
+
+      & .icone-menu {
+        /* display: none; */
+      }
+
+      & .icone-close {
+        display: none;
+      }
+    }
+  }
+
   /* SECAO HERO */
 
   .hero-secao {

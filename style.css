@@ -12,9 +12,14 @@
   padding: 1.6rem 3.12rem;
   box-shadow: 0 0.21rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
 
+  & img {
+    width: 10rem;
+  }
+
   & .menu-cabecalho {
     display: flex;
     gap: 2.4rem;
+    text-align: end;
 
     & .item-lista-cabecalho {
       color: var(--azul-escuro);
@@ -66,6 +71,11 @@
       color: var(--azul-escuro);
       content: "\25bc";
     }
+  }
+
+  & .nav-icones {
+    display: none;
+    width: 4rem;
   }
 }
 

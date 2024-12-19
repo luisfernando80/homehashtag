@@ -2,4 +2,13 @@
   html {
     font-size: 50%;
   }
+
+  /* CABEÇALHO */
+
+  .cabecalho {
+    padding: 1.6rem 2rem;
+    & img {
+      width: 7.73vw;
+    }
+  }
 }
