@@ -142,3 +142,132 @@
     }
   }
 }
+
+/* SECAO CONTEUDO GRATUITO */
+
+.gratuito-secao {
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.5rem 2rem;
+
+  & .gratuito {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    & .morckup-pc-gratuito {
+      z-index: 999;
+      position: relative;
+      top: 7.5rem;
+      left: 3.2rem;
+      max-width: 35.7rem;
+    }
+
+    & .segunda-coluna-gratuito {
+      display: flex;
+      flex-flow: column;
+      gap: 5rem;
+
+      & .titulo-gratuito-h2 {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+        line-height: 1.1;
+        letter-spacing: 0.1rem;
+
+        & h2 {
+          font-size: 3.5rem;
+          font-weight: 400;
+          & span {
+            color: var(--roxo-destaque);
+            font-weight: 600;
+          }
+        }
+      }
+
+      & .caixas-gratuito {
+        display: flex;
+        gap: 2rem;
+
+        & .caixa-cursos {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          gap: 1.8rem;
+          position: relative;
+          box-shadow: inset 0 0 0.9rem 0.2rem rgba(0, 0, 0, 0.125);
+          padding: 1.8rem 1.4rem;
+          border-radius: 2rem;
+
+          & .titulo-h3 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-2deg);
+            display: inline-block;
+            font-size: 2.3rem;
+            font-weight: 700;
+            padding: 0.4rem 2rem;
+            background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
+            color: white;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.125);
+          }
+
+          & .bolas-cursos {
+            display: flex;
+            gap: 0.4rem;
+            justify-content: center;
+            & .bola-curso {
+              border-radius: 50%;
+              background-color: var(--cinza-background-gratuito);
+              width: 5rem;
+              height: 5rem;
+              box-shadow: inset 0 0 0.3rem 0.3rem rgba(0, 0, 0, 0.125);
+
+              & img {
+                width: 100%;
+                padding: 1rem;
+              }
+            }
+          }
+
+          & .links-cursos-gratuitos {
+            display: flex;
+            flex-flow: column;
+            gap: 0.8rem;
+            align-items: center;
+
+            & li {
+              display: flex;
+              gap: 0.65rem;
+              align-items: center;
+              background-color: #eee;
+              box-shadow: inset 0 0 0.8rem 0.6rem rgba(0, 0, 0, 0.1);
+              padding: 0.8rem 4rem;
+              border-radius: 2rem;
+              width: 24rem;
+
+              & img {
+                width: 2rem;
+              }
+
+              & a {
+                text-decoration: none;
+                color: inherit;
+                transition: color 0.3s ease;
+
+                &:hover {
+                  color: var(--laranja);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
