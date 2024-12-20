@@ -115,4 +115,32 @@
       }
     }
   }
+
+  /* CONTEUDO GRATUITO */
+
+  .gratuito-secao {
+    background-image: url(https://uploads-ssl.webflow.com/61b9e0dd381626819c8d4f83/6500ece03c16520e44ba5837_bg-conteudos-mobile.png);
+    background-size: auto;
+    background-position-y: bottom;
+    background-color: white;
+
+    & .gratuito {
+      padding: 4rem 2rem;
+      flex-flow: column;
+
+      & .morckup-pc-gratuito {
+        left: 0;
+      }
+
+      & .segunda-coluna-gratuito {
+        order: -1;
+        align-items: center;
+
+        & .titulo-gratuito-h2 {
+          & h2 {
+          }
+        }
+      }
+    }
+  }
 }

@@ -150,12 +150,11 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 4.5rem 2rem;
+  /* padding: 4.5rem 2rem; */
 
   & .gratuito {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 
     & .morckup-pc-gratuito {
       z-index: 999;
@@ -169,6 +168,7 @@
       display: flex;
       flex-flow: column;
       gap: 5rem;
+      align-items: center;
 
       & .titulo-gratuito-h2 {
         display: flex;
