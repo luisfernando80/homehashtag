@@ -1,2 +1,14 @@
 @media all and (max-width: 30em) {
+  /* CONTEUDO GRATUITO */
+
+  .gratuito-secao {
+    padding-top: 2rem;
+
+    & .caixas-gratuito {
+      display: flex;
+      gap: 6rem;
+      flex-flow: wrap;
+      justify-content: center;
+    }
+  }
 }
