@@ -1,6 +1,7 @@
 /* CABEÇALHO */
 
 .cabecalho {
+  z-index: 9999;
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -270,4 +271,134 @@
       }
     }
   }
+}
+
+/* SECAO DIFERENCIAIS */
+
+.container-diferenciais {
+  border-radius: 5rem;
+  box-shadow: inset 0 0 0.6rem 0.6rem rgba(0, 0, 0, 0.059);
+
+  padding-bottom: 4rem;
+  max-width: 106rem;
+}
+
+.container-diferenciais-azul {
+  display: flex;
+  gap: 2rem;
+  background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+  color: white;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  padding: 4.88rem;
+  padding-bottom: 12rem;
+}
+
+.container-azul__h2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 1.1;
+  flex: 1.4;
+  letter-spacing: 0.3rem;
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0 0.52rem 1.6rem;
+}
+
+.container-azul__p {
+  font-size: 1.9rem;
+  text-align: right;
+  flex: 1;
+}
+
+.container-diferenciais-blocos {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 2.5rem;
+  position: relative;
+  top: -6rem;
+}
+
+.container-diferenciais-bloco {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 0.8rem 0.4rem rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  border-radius: 2rem;
+  flex: 1;
+  background-color: white;
+}
+
+.container-diferenciais-bloco-cx-img {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 0;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffb20f;
+  padding: 1.6rem;
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.container-diferenciais-bloco__img {
+  width: 100%;
+}
+
+.container-diferenciais__h3 {
+  color: #005e88;
+  font-weight: 600;
+  font-size: 2.3rem;
+  padding-top: 5rem;
+}
+
+.container-diferenciais-bloco__pss {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.container-diferenciais-empresas {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.container-diferenciais-empresas__h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.container-diferenciais-empresas__link:link,
+.container-diferenciais-empresas__link:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #005e88;
+  transition: color 0.2s linear;
+}
+
+.container-diferenciais-empresas__link:hover,
+.container-diferenciais-empresas__link:active {
+  color: #f60;
+}
+
+.container-diferenciais-empresas-logos {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  max-width: 60rem;
+}
+
+.container-diferenciais-empresas-logos__img {
+  width: 8rem;
+  filter: grayscale(100%);
 }
