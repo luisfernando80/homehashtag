@@ -11,4 +11,10 @@
       justify-content: center;
     }
   }
+
+  /* SECAO DIFERENCIAIS */
+
+  .container-diferenciais-empresas-logos {
+    max-width: 55rem;
+  }
 }
