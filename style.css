@@ -278,7 +278,6 @@
 .container-diferenciais {
   border-radius: 5rem;
   box-shadow: inset 0 0 0.6rem 0.6rem rgba(0, 0, 0, 0.059);
-
   padding-bottom: 4rem;
   max-width: 106rem;
 }
@@ -401,4 +400,90 @@
 .container-diferenciais-empresas-logos__img {
   width: 8rem;
   filter: grayscale(100%);
+}
+
+/* SECAO O QUE FALAM */
+
+.oqfalam-secao {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-04.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oqfalam-container {
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
+}
+
+.oqfalam-titulo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.oqfalam__h2 {
+  font-size: 2.7rem;
+  color: white;
+  font-weight: 400;
+}
+
+.oqfalam-carrossel {
+}
+
+.oqfalam-carrossel-videos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.oqfalam-carrossel__seta-esquerda {
+  position: absolute;
+  top: 42%;
+  left: -7rem;
+  cursor: pointer;
+}
+
+.oqfalam-carrossel__seta-direita {
+  position: absolute;
+  top: 42%;
+  right: -8rem;
+  cursor: pointer;
+}
+
+.oqfalam-carrossel__video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  aspect-ratio: 16/9;
+  max-width: 32rem;
+  border-radius: 2.5rem;
+  background-color: #7489af;
+  background-blend-mode: multiply;
+}
+
+.oqfala-carrossel__video01 {
+  background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
+
+.oqfalam-carrossel__video02 {
+  background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+
+.oqfalam-carrossel__video03 {
+  background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.oqfalam-carrossel__img-play {
+  cursor: pointer;
+  max-width: 3rem;
 }
