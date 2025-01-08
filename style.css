@@ -415,6 +415,7 @@
   display: flex;
   flex-flow: column;
   gap: 3.12rem;
+  width: 100%;
 }
 
 .oqfalam-titulo {
@@ -453,7 +454,7 @@
 .oqfalam-carrossel__seta-direita {
   position: absolute;
   top: 42%;
-  right: -8rem;
+  right: -7rem;
   cursor: pointer;
 }
 
@@ -486,4 +487,80 @@
 .oqfalam-carrossel__img-play {
   cursor: pointer;
   max-width: 3rem;
+}
+
+.oqfalam__botoes-navegacao {
+  display: flex;
+  gap: 0.5rem;
+  align-self: center;
+}
+
+.oqfalam__botao-navegacao {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #14577f;
+  border-radius: 50%;
+}
+
+.oqfalam-botao:link,
+.oqfalam-botao:visited {
+  background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+  border-bottom: 0.4rem solid #14577f;
+  border-right: 0.4rem solid #14577f;
+  max-width: 40rem;
+  align-self: center;
+  transition: color ease-in 0.2s;
+}
+
+.oqfalam-botao:hover,
+.oqfalam-botao:active {
+  background-image: none;
+  border-bottom: 0.4rem solid #1a80a7;
+  border-right: 0.4rem solid #1a80a7;
+  background-color: #1a80a7;
+}
+
+/* SECAO NA MIDIA */
+
+.namidia-secao {
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-Banner-05_1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3.9rem;
+  padding-top: 3.9rem;
+}
+
+.namidia-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.namidia-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.namidia-titulo__h2 {
+  font-size: 2.76rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.namidia-logos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.namidia-logo__link:link,
+.namidia-logo__link:visited {
+  transition: transform linear 0.2s;
+}
+
+.namidia-logo__link:hover,
+.namidia-logo__link:active {
+  transform: scale(108%);
 }
