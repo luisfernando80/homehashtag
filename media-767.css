@@ -214,4 +214,12 @@
     flex-flow: column;
     align-items: center;
   }
+
+  /* SECAO BLOG */
+
+  .blog-container {
+    grid-template-columns: 1fr;
+    gap: 3.5vw;
+    max-width: 78.57rem;
+  }
 }
