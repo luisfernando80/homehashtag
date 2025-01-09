@@ -579,7 +579,6 @@
   box-shadow: inset 0 0 0.8rem 0.4rem rgba(0, 0, 0, 0.11);
   border-radius: 5rem;
   max-width: 106rem;
-  /* height: 30rem; */
   padding: 8rem 5rem 5rem 5rem;
 }
 
@@ -661,4 +660,83 @@
 .blog-container__post-paragrafo {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+
+/* SECAO AJUDAR */
+
+.ajudar-amarelo {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUND-banner-07.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ajudar-amarelo-container {
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
+  align-items: center;
+}
+
+.ajudar-amarelo-container-caixa-titulo {
+  max-width: max-content;
+  background-image: linear-gradient(90deg, #14a1d5, #1a8ad4);
+  color: white;
+  padding: 0.4rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+.ajudar-amarelo-container-titulo__h2 {
+  font-size: 2.76rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.ajudar-amarelo-container-lista {
+  display: flex;
+  flex-flow: column;
+  box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+  gap: 1.28rem;
+  background-color: #f9f9f9;
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  max-width: 86rem;
+}
+
+.ajudar-amarelo-container-item {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  font-size: 1.92rem;
+  line-height: 1.3;
+}
+
+.ajudar-amarelo-item-link:link,
+.ajudar-amarelo-item-link:visited {
+  color: #008ff7;
+  font-weight: 600;
+  transition: color ease 0.2s;
+}
+
+.ajudar-amarelo-item-link:hover,
+.ajudar-amarelo-item-link:active {
+  color: #0056b3;
+}
+
+.ajudar-branco-container {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+  max-width: 86rem;
+  text-align: justify;
+}
+
+.ajudar-branco-container__paragrafo {
+  font-size: 1.92rem;
+  line-height: 1.3;
+}
+
+.realce-negrito-ajudar-branco {
+  font-weight: 600;
 }
