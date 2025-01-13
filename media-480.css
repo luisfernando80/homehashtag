@@ -17,4 +17,18 @@
   .container-diferenciais-empresas-logos {
     max-width: 55rem;
   }
+
+  /* SECAO MINICURSO */
+
+  .minicurso-formulario {
+    grid-template-columns: 1fr;
+    max-width: 35rem;
+    width: 100%;
+    align-self: center;
+    gap: 2.5rem;
+  }
+
+  .minicurso-botao {
+    justify-self: center;
+  }
 }

@@ -48,4 +48,7 @@ ul {
   color: white;
   box-shadow: 0.4rem 0.4rem 0.6rem 0.1rem rgba(0, 0, 0, 0.164);
   text-align: center;
+  border: 0;
+  border-bottom: 0.4rem solid var(--marrom-borda);
+  border-right: 0.4rem solid var(--marrom-borda);
 }
