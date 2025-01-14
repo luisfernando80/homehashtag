@@ -817,3 +817,80 @@
 .minicurso-botao:focus {
   outline: none;
 }
+
+/* SECAO RODAPE */
+
+.rodape {
+  background-color: #f4f5f7;
+}
+
+.rodape-container {
+  display: flex;
+  flex-flow: column;
+  gap: 5rem;
+}
+
+.rodape__logo-hashtag {
+  max-width: 18rem;
+}
+
+.rodape-coluna {
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
+}
+
+.rodape-subsecao {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+
+.rodape-subsecao__titulo {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.rodape-seg-subsecao {
+  display: flex;
+  flex-flow: column;
+  gap: 1.28rem;
+}
+
+.rodape-subsecao__subtitulo {
+  font-size: 1.92rem;
+  line-height: 1.3;
+}
+
+.rodape-subsecao__seg-subtitulo {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.rodape-links {
+  display: flex;
+  flex-flow: column;
+  gap: 0.65rem;
+}
+
+.rodape-svg-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.rodape-link__svg {
+  max-width: 2.4rem;
+}
+
+.rodape__link:link,
+.rodape__link:visited {
+  color: inherit;
+  transition: color 0.2s ease-in;
+}
+
+.rodape__link:hover,
+.rodape__link:active {
+  color: var(--laranja);
+}
