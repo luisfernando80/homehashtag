@@ -224,4 +224,22 @@
   }
 
   /* SECAO RODAPE */
+
+  .rodape-container {
+    row-gap: 6rem;
+    justify-items: center;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .rodape__logo-hashtag {
+    grid-column: 2;
+  }
+
+  .rodape-coluna {
+    grid-row: 1 / span 3;
+  }
+
+  .rodape-form-newsletter {
+    grid-row: 2;
+  }
 }
