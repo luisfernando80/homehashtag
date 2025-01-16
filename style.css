@@ -828,6 +828,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   column-gap: 3.12rem;
+  row-gap: 3.12rem;
 }
 
 .rodape__logo-hashtag {
