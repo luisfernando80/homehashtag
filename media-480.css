@@ -1,14 +1,63 @@
 @media all and (max-width: 30em) {
+  /* SECAO HERO */
+
+  .hero-botao {
+    padding: 0.5rem 3rem;
+  }
+
   /* CONTEUDO GRATUITO */
 
   .gratuito-secao {
     padding-top: 2rem;
 
-    & .caixas-gratuito {
-      display: flex;
-      gap: 6rem;
-      flex-flow: wrap;
-      justify-content: center;
+    & .gratuito {
+      & .morckup-pc-gratuito {
+      }
+
+      & .segunda-coluna-gratuito {
+        display: flex;
+        flex-flow: column;
+        gap: 5rem;
+        align-items: center;
+
+        & .titulo-gratuito-h2 {
+          text-align: center;
+
+          & h2 {
+          }
+        }
+
+        & .caixas-gratuito {
+          display: flex;
+          flex-flow: wrap;
+          gap: 6rem;
+          justify-content: center;
+
+          & .caixa-cursos {
+            & .titulo-h3 {
+            }
+
+            & .bolas-cursos {
+              & .bola-curso {
+                & img {
+                }
+              }
+            }
+
+            & .links-cursos-gratuitos {
+              & li {
+                & img {
+                }
+
+                & a {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -18,7 +67,29 @@
     max-width: 55rem;
   }
 
+  /* SECAO NA MIDIA */
+
+  .namidia-logos {
+    max-width: 35rem;
+  }
+
+  .namidia-logo__link {
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  /* SECAO BLOG */
+
+  .blog-container-titulo {
+    width: 78.125vw;
+  }
+
   /* SECAO MINICURSO */
+
+  .minicurso-secao {
+    padding: 3.6rem 2rem;
+  }
 
   .minicurso-formulario {
     grid-template-columns: 1fr;
@@ -30,5 +101,36 @@
 
   .minicurso-botao {
     justify-self: center;
+  }
+
+  /* SECAO RODAPE */
+
+  .rodape-container {
+    row-gap: 4rem;
+    grid-template-columns: 1fr auto;
+    column-gap: 0;
+  }
+
+  .rodape__logo-hashtag {
+    grid-column: 1;
+    grid-row: 1;
+    width: 14rem;
+  }
+
+  .rodape-coluna {
+    text-align: center;
+    align-items: center;
+    grid-row: none;
+    max-width: 44rem;
+  }
+
+  .rodape-copyright {
+    grid-row: 4;
+    grid-column: auto;
+  }
+
+  .rodape-form-newsletter {
+    grid-column: 1;
+    grid-row: 3;
   }
 }
