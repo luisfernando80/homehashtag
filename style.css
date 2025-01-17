@@ -83,7 +83,7 @@
 /* SECAO HERO */
 
 .hero-secao {
-  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+  background-image: url("imagens/img-novo/BACKGROUN-banner-01.webp");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@
 /* SECAO CONTEUDO GRATUITO */
 
 .gratuito-secao {
-  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
+  background-image: url("imagens/img-novo/BACKGROUN-banner-02.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -966,4 +966,21 @@
   border-bottom: 0.4rem solid #1a80a7;
   border-right: 0.4rem solid #1a80a7;
   background-color: #1a80a7;
+}
+
+/* FIXO LINK WHATSAPP */
+
+.link-whatsapp-fixo {
+  position: fixed;
+  bottom: 1.28rem;
+  right: 1.28rem;
+  transition: transform ease-in 0.2s;
+
+  &:hover {
+    transform: translate(0.5rem, 0.5rem);
+  }
+
+  & img {
+    max-width: 8.5rem;
+  }
 }
