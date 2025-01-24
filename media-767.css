@@ -176,36 +176,44 @@
 
   /* SECAO O QUE FALAM */
 
-  .oqfalam-container {
-    gap: 2vw;
-  }
-
-  .oqfalam-titulo {
-    align-items: center;
+  .oquefalam__titulo {
     text-align: center;
-    letter-spacing: 0.16rem;
-    line-height: 1.2;
+    max-width: 45rem;
   }
 
-  .oqfalam__h2 {
-    max-width: 31rem;
+  .oquefalam__carrossel {
   }
 
-  .oqfalam-carrossel-videos {
-    max-width: 100%;
+  .oquefalam-carrossel-imagens {
+    align-self: stretch;
+    display: flex;
+    /* gap: 2rem; */
+    gap: 1.82vw;
+    position: relative;
+  }
+
+  .oquefalam-container-imgs {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
     gap: 1.82vw;
   }
 
-  .oqfalam-carrossel__video {
-    /* min-width: calc(calc(100% - 1.82vw) / 2); */
+  .oquefalam-carrossel-img {
+    min-width: calc(calc(100% - 1.82vw) / 2);
   }
 
-  .oqfalam-carrossel__seta-esquerda {
-    width: 5.6vw;
+  .oquefalam-seta {
+    max-width: 5.6vw;
   }
 
-  .oqfalam-carrossel__seta-direita {
-    width: 5.6vw;
+  .seta--esquerda {
+    transform: translate(-115%, -42%);
+  }
+
+  .seta--direita {
+    transform: translate(140%, -42%);
   }
 
   /* SECAO NA MIDIA */

@@ -67,6 +67,28 @@
     max-width: 55rem;
   }
 
+  /* SECAO O QUE FALAM */
+
+  .oquefalam-container {
+    margin: 0 5.6rem;
+  }
+
+  .oquefalam__titulo {
+    flex-flow: column;
+  }
+
+  .oquefalam-carrossel-img {
+    min-width: 100%;
+  }
+
+  .oquefalam-seta {
+    max-width: 5rem;
+  }
+
+  .oquefalam-botao {
+    padding: 0.5rem 2rem;
+  }
+
   /* SECAO NA MIDIA */
 
   .namidia-logos {
@@ -83,6 +105,12 @@
 
   .blog-container-titulo {
     width: 78.125vw;
+  }
+
+  /* SECAO AJUDAR */
+
+  .ajudar-amarelo-container-titulo__h2 {
+    text-align: center;
   }
 
   /* SECAO MINICURSO */

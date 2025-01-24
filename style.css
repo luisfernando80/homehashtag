@@ -411,113 +411,123 @@
   background-size: cover;
 }
 
-.oqfalam-container {
+.oquefalam-container {
   display: flex;
   flex-flow: column;
   gap: 3.12rem;
-  width: 100%;
+  align-items: center;
 }
 
-.oqfalam-titulo {
+.oquefalam__titulo {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 2rem;
+  gap: 1.6rem;
+  align-items: center;
 }
 
-.oqfalam__h2 {
-  font-size: 2.7rem;
-  color: white;
+.oquefalam__h2 {
+  font-size: 2.76rem;
   font-weight: 400;
+  line-height: 1.1;
+  color: white;
+
+  & span {
+    font-weight: 600;
+  }
 }
 
-.oqfalam-carrossel {
-}
-
-.oqfalam-carrossel-videos {
+.oquefalam__carrossel {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+  align-items: center;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  max-width: 100rem;
-  margin: 0 auto;
+  align-self: stretch;
 }
 
-.oqfalam-carrossel__seta-esquerda {
+.oquefalam-seta {
   position: absolute;
-  top: 42%;
-  left: -7rem;
-  cursor: pointer;
+  top: 50%;
 }
 
-.oqfalam-carrossel__seta-direita {
-  position: absolute;
-  top: 42%;
-  right: -7rem;
-  cursor: pointer;
+.seta--esquerda {
+  left: 0;
+  transform: translate(-150%, -65%);
 }
 
-.oqfalam-carrossel__video {
-  flex: 1;
+.seta--direita {
+  right: 0;
+  transform: translate(160%, -65%);
+}
+
+.oquefalam-container-imgs {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: 50%;
-  background-size: cover;
-  aspect-ratio: 16/9;
-  max-width: 32rem;
-  border-radius: 2.5rem;
+  align-items: stretch;
+  gap: 1.82vw;
+}
+
+.oquefalam-carrossel-img {
+  position: relative;
+  /* flex: 1; */
+  min-width: 30rem;
   background-color: #7489af;
   background-blend-mode: multiply;
+  display: inline-block;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  border-radius: 2.5rem;
 }
 
-.oqfala-carrossel__video01 {
+.video01 {
   background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
 }
 
-.oqfalam-carrossel__video02 {
+.video02 {
   background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
 }
 
-.oqfalam-carrossel__video03 {
+.video03 {
   background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
 }
 
-.oqfalam-carrossel__img-play {
-  cursor: pointer;
+.seta-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 3rem;
+  cursor: pointer;
 }
 
-.oqfalam__botoes-navegacao {
+.oquefalam__navegacao {
   display: flex;
-  gap: 0.5rem;
-  align-self: center;
+  gap: 1rem;
 }
 
-.oqfalam__botao-navegacao {
+.item--navegacao {
   width: 1.2rem;
   height: 1.2rem;
-  background-color: #14577f;
   border-radius: 50%;
+  background-color: #86a8bc;
+  cursor: pointer;
+
+  &.ativa {
+    background-color: #14577f;
+  }
 }
 
-.oqfalam-botao:link,
-.oqfalam-botao:visited {
+.oquefalam-botao {
   background-image: linear-gradient(180deg, #196c9f, #1a80a7);
-  border-bottom: 0.4rem solid #14577f;
-  border-right: 0.4rem solid #14577f;
-  max-width: 40rem;
-  align-self: center;
-  transition: color ease-in 0.2s;
-}
+  border-bottom-color: #14577f;
+  border-right-color: #14577f;
 
-.oqfalam-botao:hover,
-.oqfalam-botao:active {
-  background-image: none;
-  border-bottom: 0.4rem solid #1a80a7;
-  border-right: 0.4rem solid #1a80a7;
-  background-color: #1a80a7;
+  &:hover {
+    background-image: none;
+    background-color: #1a80a7;
+    border-bottom-color: #1a80a7;
+    border-right-color: #1a80a7;
+  }
 }
 
 /* SECAO NA MIDIA */
